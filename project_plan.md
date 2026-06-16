@@ -41,7 +41,7 @@
 
 프로그램이 최종적으로 무엇을 출력하는가?
 
-- 사용자가 입력했던 5*5 암호화 행렬을 출력한다
+- 사용자가 입력했던 5*5 암호화 행렬과 2차원 리스트를 출력한다
 - 암호화 요청이었다면 암호문을, 복호화 요청이었다면 복호화가 완료된 원래의 평문을 출력한다.
 ---
 
@@ -83,6 +83,7 @@ PlayFair = [
 | find_position(char, PlayFair) | 특정 알파벳 글자가 2차원 리스트의 몇 행, 몇 열에 위치하는지 찾는다 | char, PlayFair | row, col |
 | cipher_pair(char1, char2, PlayFair, mode) | 두 글자 쌍과 행렬을 받아 플레이페어의 3가지 규칙을 조건문으로 판정하여 새로운 두 글자로 치환한다 | char1, char2, PlayFair, mode | new_char1, new_char2
 | process_all_text(text, PlayFair, mode) | 전처리가 끝난 전체 문장을 반복문을 통해 2글자씩 잘라 가며 cipher_pair 함수를 반복 호출하고, 변환된 글자들을 합쳐서 최종 결과 문장을 만든다 | text, PlayFair, mode | result_text
+| main | 사용자에게 메뉴(암호화, 복호화, 종료)를 제공하고 입출력을 제어하는 프로그램의 메인 루프를 실행함 | 사용자가 선택한 숫자 | 사용자가 원하는 동작 결과 |
 
 ---
 
